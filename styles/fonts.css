@@ -1,0 +1,11 @@
+.font-white {
+  color: var(--font-white);
+}
+.font-playfair-black {
+  font-weight: 900;
+  font-family: 'Playfair Display';
+}
+.font-playfair-regular {
+  font-weight: 400;
+  font-family: 'Playfair Display';
+}

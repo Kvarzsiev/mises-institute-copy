@@ -1,0 +1,68 @@
+#article-topic {
+  background-image: url('../assets/brackets-orange-large.svg');
+  background-repeat: no-repeat;
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  font-family: 'Barlow Condensed';
+  font-weight: 500;
+  background-position: center;
+}
+.featured-section {
+  padding: 0 100px;
+  text-align: center;
+}
+.description {
+  font-family: 'Playfair Display';
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #00202E;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.comments {
+  font-size: 14px;
+  color: #085475;
+  font-family: 'Barlow Condensed';
+  font-weight: 500;
+}
+.article-card-shadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3)
+}
+.card-podcast {
+  max-width: 100%;
+  min-height: 140px;
+  position: relative;
+  background-color: var(--secondary-background);
+}
+#podcasts > h3 {
+  font-size: 24px;
+  line-height: 32px;
+  color: var(--dark-background);
+  margin: 0;
+  font-family: 'Playfair Display';
+  font-weight: 900;
+  text-align: center;
+}
+.card-podcast .card-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  width: 90px;
+  height: 75px;
+  margin: 20px 30px 20px 35px;
+  border-radius: 5px;
+  background-size: cover;
+  background-position: center;
+}
+.card-podcast .card-details {
+  text-align: left;
+  padding: 20px 20px 20px 150px;
+
+}

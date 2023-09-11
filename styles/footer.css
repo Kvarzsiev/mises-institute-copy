@@ -1,0 +1,10 @@
+footer {
+  padding: 60px 0;
+  background-color: var(--dark-background);
+}
+footer > div {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px;
+  display: flexbox;
+}

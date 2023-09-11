@@ -1,0 +1,21 @@
+header {
+  width: 100%;
+  padding: 10px 15px 0 15px;
+  box-sizing: border-box;
+  background-color: var(--secondary-background);
+  box-shadow: 0 1px 1px #00000029;
+}
+#header {
+  max-width: 1200px;
+  position: relative;
+  padding: 0 15px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: inherit;
+}
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 22px;
+}
+
