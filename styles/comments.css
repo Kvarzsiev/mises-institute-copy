@@ -81,20 +81,4 @@
   max-height: 700px;
   overflow-y: auto;
 }
-#show-all-button {
-  display: inline-flex;
-  cursor: pointer;
-  font-size: 16px;
-  line-height: 17px;
-  text-transform: uppercase;
-  background-color: var(--detail-blue);
-  font-family: 'Barlow Condensed';
-  font-weight: 700;
-  letter-spacing: 2.4px;
-  height: 40px;
-  border: none;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 4px;
-  margin-right: 10px;
-}
+

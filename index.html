@@ -28,7 +28,13 @@
           ></a>
         </div>
         <div class="half-row flex justify-content-end">
-          <button type="button" class="small">DOAR</button>
+          <button
+            onclick="window.location.href='./pages/assinar.html';"
+            type="button"
+            class="small"
+          >
+            Assinar
+          </button>
         </div>
         <div id="main-logo" class="flex full-row">
           <a href="index.html">
@@ -39,22 +45,24 @@
           <nav>
             <ul>
               <li>
-                <a href="">Quem Somos</a>
+                <a class="header-link" href="./pages/quem-somos.html"
+                  >Quem Somos</a
+                >
               </li>
               <li>
-                <a href="">Artigos</a>
+                <a class="header-link" href="./pages/artigos.html">Artigos</a>
               </li>
               <li>
-                <a href="">Atualidades</a>
+                <a class="header-link" href="">Atualidades</a>
               </li>
               <li>
-                <a href="">Podcasts</a>
+                <a class="header-link" href="">Podcasts</a>
+              </li>
+              <li class="dropdown">
+                <a class="header-link" href="">Ensino</a>
               </li>
               <li>
-                <a href="">Ensino</a>
-              </li>
-              <li>
-                <button type="button"></button>
+                <button class="header-search" type="button"></button>
               </li>
             </ul>
           </nav>
@@ -62,7 +70,7 @@
         <div class="container-nav"></div>
       </div>
     </header>
-    <main>
+    <main id="index">
       <div class="container margin-top-55 margin-bot-100">
         <section class="two-third-row padding-x-15 border-box">
           <a
@@ -94,14 +102,82 @@
               </div>
             </article>
           </a>
+          <div class="inline-flex justify-content-center border-box">
+            <a href="#" class="card-article">
+              <div class="card-image">
+                <img src="./assets/almirante.jpg" />
+              </div>
+              <div class="flex column padding-x-25 card-body">
+                <h4
+                  class="red-color"
+                  style="
+                    background-image: url(&quot;./assets/brackets-red.svg&quot;);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  "
+                >
+                  Economia
+                </h4>
+                <h3>
+                  Sindicatos, badernas, greves nos setores público e privado, e
+                  coerções
+                </h3>
+                <p class="description">
+                  E os privilégios imorais dos sindicatos do funcionalismo
+                  público
+                </p>
+                <span class="author red-color"
+                  >Por<strong>&nbsp;Thomas DiLorenzo</strong></span
+                >
+                <div class="comments">
+                  <img class="margin-right-10" src="./assets/comment.svg" />
+                  <span class="margin-right-30">68</span>
+                  <img class="margin-right-10" src="./assets/clock.svg" />
+                  <span class="margin-right-10">09/09/2023</span>
+                  <img class="margin-right-10" src="./assets/arrow-right.svg" />
+                </div>
+              </div>
+            </a>
+            <a href="#" class="card-article">
+              <div class="card-image">
+                <img src="./assets/airplanes.jpeg" />
+              </div>
+              <div class="card-body">
+                <h4
+                  class="red-color"
+                  style="
+                    background-image: url(&quot;./assets/brackets-red.svg&quot;);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                  "
+                >
+                  Economia
+                </h4>
+                <h3>
+                  O Departamento de Justiça “salva” os consumidores das
+                  companhias aéreas low cost
+                </h3>
+                <p class="description">Voando para a tolice</p>
+                <span class="author red-color"
+                  >Por<strong class="red-color"
+                    >&nbsp;Benjamin Seevers</strong
+                  ></span
+                >
+                <div class="comments">
+                  <img class="margin-right-10" src="./assets/comment.svg" />
+                  <span class="margin-right-30">1</span>
+                  <img class="margin-right-10" src="./assets/clock.svg" />
+                  <span class="margin-right-10">08/09/2023</span>
+                  <img class="margin-right-10" src="./assets/arrow-right.svg" />
+                </div>
+              </div>
+            </a>
+          </div>
           <div id="podcasts">
             <h3>//Ouça nossos podcasts</h3>
             <div></div>
-            <div class="d-flex flex-column flex-md-row">
-              <a
-                href="https://mises.org.br/podcasts/511/episodio-498-eleicoes-americanas-uma-analise-austro-libertaria"
-                class="featured-podcast margin-top-30 margin-bottom-10"
-              >
+            <div class="flex">
+              <a href="#" class="featured-podcast">
                 <div class="card-podcast">
                   <div
                     class="card-image"
@@ -119,7 +195,7 @@
                 </div>
               </a>
               <a
-                href="https://mises.org.br/podcasts/510/podcast-497-o-livre-mercado-no-cenario-politico-atual"
+                href="#"
                 class="featured-podcast margin-top-30 margin-bottom-10"
               >
                 <div class="card-podcast">
@@ -138,6 +214,14 @@
                 </div>
               </a>
             </div>
+          </div>
+          <div class="flex justify-content-center margin-top-10">
+            <button
+              class="show-all-button"
+              style="padding-left: 115px; padding-right: 115px"
+            >
+              Ver mais
+            </button>
           </div>
         </section>
         <section class="one-third-row padding-x-15 border-box">
@@ -166,25 +250,16 @@
               Ajude a difundir as ideias de liberdade e a construir um Brasil
               mais livre!
             </p>
-            <button
-              id="bright-blue"
-              href="https://clube.mises.org.br"
-              class="padding-x-15"
-            >
+            <button class="bright-blue show-all-button padding-x-15">
               Clube Mises
             </button>
-            <button href="https://mises.org.br/doar" class="padding-x-40">
-              Doar
-            </button>
+            <button class="show-all-button padding-x-40">Doar</button>
           </div>
           <div class="last-comments margin-top-40">
             <h3>Últimos comentários</h3>
             <div class="comments-block-scroll" id="commentsDesktop">
               <div id="comments-block">
-                <a
-                  href="https://mises.org.br/artigos/3184/como-funciona-a-suprema-corte-dos-estados-unidos?goToComment=197484"
-                  class="card-comment"
-                >
+                <a href="./pages/corte-eua.html" class="card-comment">
                   <div class="card-details">
                     <p class="comment">
                       Eu entendi errado ou, não havendo concorruing nem
@@ -192,7 +267,7 @@
                       por apenas um Justice?
                     </p>
                     <span class="author">
-                      <strong class="text-color-red"
+                      <strong class="red-color"
                         >Jean | Como funciona a Suprema Corte dos Estados
                         Unidos</strong
                       >
@@ -206,10 +281,7 @@
                     <div class="arrow-right"></div>
                   </div>
                 </a>
-                <a
-                  href="https://mises.org.br/artigos/1384/cambalache-a-historia-do-colapso-economico-da-argentina?goToComment=197483"
-                  class="card-comment"
-                >
+                <a href="#" class="card-comment">
                   <div class="card-details">
                     <p class="comment">
                       Será que a argentina vai conseguir dolarizar a economia
@@ -218,7 +290,7 @@
                       Millei
                     </p>
                     <span class="author">
-                      <strong class="text-color-red"
+                      <strong class="red-color"
                         >Paulo | Cambalache - a história do colapso econômico da
                         Argentina</strong
                       >
@@ -232,10 +304,7 @@
                     <div class="arrow-right"></div>
                   </div>
                 </a>
-                <a
-                  href="https://mises.org.br/artigos/3185/qual-o-caminho-para-consertar-o-rio-de-janeiro?goToComment=197482"
-                  class="card-comment"
-                >
+                <a href="#" class="card-comment">
                   <div class="card-details">
                     <p class="comment">
                       Brasil e tao igualitario que a pessoa nao pode ganhar mais
@@ -246,7 +315,7 @@
                       outros
                     </p>
                     <span class="author">
-                      <strong class="text-color-red"
+                      <strong class="red-color"
                         >Imperion | Qual o caminho para consertar o Rio de
                         Janeiro?</strong
                       >
@@ -260,17 +329,14 @@
                     <span class="arrow-right"></span>
                   </div>
                 </a>
-                <a
-                  href="https://mises.org.br/artigos/2771/sindicatos-badernas-greves-nos-setores-publico-e-privado-e-coercoes?goToComment=197481"
-                  class="card-comment"
-                >
+                <a href="#" class="card-comment">
                   <div class="card-details">
                     <p class="comment">
                       No seculo xvii , as pessoas eram escravas ou servas e
                       estavam disponiveis 24 horas por dia.
                     </p>
                     <span class="author">
-                      <strong class="text-color-red"
+                      <strong class="red-color"
                         >Imperion | Sindicatos, badernas, greves nos setores
                         público e privado, e coerções</strong
                       >
@@ -284,17 +350,14 @@
                     <div class="arrow-right"></div>
                   </div>
                 </a>
-                <a
-                  href="https://mises.org.br/artigos/2771/sindicatos-badernas-greves-nos-setores-publico-e-privado-e-coercoes?goToComment=197481"
-                  class="card-comment"
-                >
+                <a href="#" class="card-comment">
                   <div class="card-details">
                     <p class="comment">
                       No seculo xvii , as pessoas eram escravas ou servas e
                       estavam disponiveis 24 horas por dia.
                     </p>
                     <span class="author">
-                      <strong class="text-color-red"
+                      <strong class="red-color"
                         >Imperion | Sindicatos, badernas, greves nos setores
                         público e privado, e coerções</strong
                       >
@@ -308,10 +371,7 @@
                     <div class="arrow-right"></div>
                   </div>
                 </a>
-                <a
-                  href="https://mises.org.br/artigos/2771/sindicatos-badernas-greves-nos-setores-publico-e-privado-e-coercoes?goToComment=197480"
-                  class="card-comment"
-                >
+                <a href="#" class="card-comment">
                   <div class="card-details">
                     <p class="comment">
                       Uma jornada de trabalho mais baixa não vai surgiy
@@ -338,7 +398,7 @@
                       industrial.
                     </p>
                     <span class="author">
-                      <strong class="text-color-red"
+                      <strong class="red-color"
                         >Nikus | Sindicatos, badernas, greves nos setores
                         público e privado, e coerções</strong
                       >
@@ -355,9 +415,8 @@
               </div>
             </div>
             <button
-              href="https://mises.org.br/comentarios"
               id="show-all-button"
-              class="font-white margin-top-25 padding-x-40"
+              class="show-all-button font-white margin-top-25 padding-x-40"
             >
               Ver todos os comentários
             </button>
@@ -368,8 +427,8 @@
 
     <footer>
       <div class="container justify-content-space-between">
-        <div class="">
-          <div class="">
+        <div>
+          <div class="margin-bot-15">
             <a class="" href="https://www.facebook.com/MisesBrasil/"
               ><img src="./assets/facebook-white.svg"
             /></a>
@@ -394,11 +453,12 @@
             /></a>
           </div>
           <div class="font-white">
-            <p>contato@mises.org.br</p>
-            <p>+55 (11) 3704-3782</p>
+            <p class="margin-bot-15">contato@mises.org.br</p>
+            <p class="margin-bot-15">+55 (11) 3704-3782</p>
+            <p class="margin-bot-15">Copiado com carinho por Enzo B.</p>
           </div>
         </div>
-        <img src="./assets/footer-logo.png" alt="" />
+        <img id="footer-logo" src="./assets/footer-logo.png" alt="" />
         <div id="right-side-footer" class="flex column">
           <div id="rede-liberdade" class="flex font-white">
             <span>Membro de:</span>

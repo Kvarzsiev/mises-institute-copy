@@ -69,95 +69,74 @@
         <div class="container-nav"></div>
       </div>
     </header>
-    <main class="about-us">
+    <main class="sign margin-bot-35">
       <div class="container">
-        <div class="full-row auto-margin border-box">
-          <div class="margin-top-55 text-align-center">
-            <h2>//Quem Somos</h2>
-          </div>
+        <section
+          class="full-row auto-margin border-box margin-top-35 margin-bot-35 justify-content-center"
+        >
+          <h1 class="text-align-center margin-bot-20">
+            Formulário de Cadastro
+          </h1>
+          <form class="flex flex-wrap" action="#" method="POST">
+            <div class="flex column half-row margin-bot-15">
+              <label for="nome">Nome</label>
+              <input
+                class="max-width-70"
+                type="text"
+                id="nome"
+                name="nome"
+                autofocus
+                required
+              />
+            </div>
+            <div class="flex column half-row margin-bot-15">
+              <label for="cpf">CPF</label>
+              <input
+                class="max-width-70"
+                type="text"
+                id="cpf"
+                name="cpf"
+                required
+              />
+            </div>
+            <div class="flex column half-row margin-bot-15">
+              <label for="data_nascimento">Data de Nascimento</label>
+              <input
+                class="max-width-70"
+                type="date"
+                id="data_nascimento"
+                name="data_nascimento"
+                required
+              />
+            </div>
+            <div class="flex column half-row margin-bot-15">
+              <label for="endereco">Endereço</label>
+              <input
+                class="max-width-70"
+                type="text"
+                id="endereco"
+                name="endereco"
+                required
+              />
+            </div>
+            <div class="flex column half-row margin-bot-15">
+              <label for="email">Email</label>
+              <input
+                class="max-width-70"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+            </div>
 
-          <p class="margin-top-20">
-            O Instituto Ludwig von Mises Brasil (“IMB”) é um think tank voltado
-            à produção e à difusão de estudos econômicos e de ciências sociais
-            que promovam os princípios de livre mercado e de uma sociedade
-            livre.
-          </p>
-          <p class="margin-top-20">
-            O IMB acredita que nossa visão de uma sociedade livre deve ser
-            alcançada pelo respeito à propriedade privada, às trocas voluntárias
-            entre indivíduos, e à ordem natural dos mercados, sem interferência
-            governamental. Portanto, esperamos que nossas ações influenciem a
-            opinião pública e os meios acadêmicos de tal forma que tais
-            princípios sejam mais aceitos e substituam ações e instituições
-            governamentais que somente:
-          </p>
-          <p class="margin-top-20 margin-bot-20">
-            a) protegem os poderosos e os grupos de interesse,
-            <br />
-            b) criam hostilidade, corrupção, e desesperança,
-            <br />
-            c) limitam a prosperidade, e
-            <br />
-            d) reprimem a livre expressão e as oportunidades dos indivíduos.
-          </p>
-        </div>
-        <div class="width-100 secondary-background">
-          <div class="container auto-margin">
-            <div
-              class="full-row inline-flex flex-wrap padding-top-50 padding-bot-60"
-            >
-              <h2 class="full-row margin-bot-40">Em suas ações o IMB busca:</h2>
-              <div class="one-third-row quem-somos-icon">
-                <p class="book">
-                  Promover e divulgar os valores e ensinamentos da Escola
-                  Austríaca de Economia;
-                </p>
-              </div>
-              <div class="one-third-row quem-somos-icon">
-                <p class="restore">
-                  Restaurar o crucial papel da teoria, tanto nas ciências
-                  econômicas quanto nas ciências sociais, em contraposição ao
-                  empirismo;
-                </p>
-              </div>
-              <div class="one-third-row quem-somos-icon">
-                <p class="group">
-                  Defender a economia de mercado, a propriedade privada, e a paz
-                  nas relações interpessoais, e opor-se às intervenções estatais
-                  nos mercados e na sociedade.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="container support auto-margin">
-          <div class="flex full-row flex-wrap margin-bot-35">
-            <div class="full-row text-align-center">
-              <h2 class="margin-top-30 margin-bot-50">//Apoie o Mises</h2>
-            </div>
-            <div class="half-row">
-              <p class="margin-bot-30">
-                Ajude a difundir as ideias de liberdade e a construir um Brasil
-                mais livre!
-              </p>
-              <button
-                class="support-buttons margin-bot-20 padding-x-55 padding-y-10"
-              >
-                Doar
-              </button>
-            </div>
-            <div class="half-row">
-              <p class="margin-bot-30">
-                Nós fazemos a liberdade e você pode fazer parte junto conosco
-              </p>
-              <button
-                class="support-buttons bright-blue margin-bot-35 padding-x-25 padding-y-10"
-              >
-                Clube Mises
-              </button>
-            </div>
-          </div>
-        </div>
+            <input
+              type="submit"
+              value="Enviar"
+              class="show-all-button font-white margin-top-20 padding-x-40"
+            />
+          </form>
+        </section>
       </div>
     </main>
 

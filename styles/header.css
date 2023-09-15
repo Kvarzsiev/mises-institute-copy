@@ -1,3 +1,34 @@
+.dropdown::after {
+  content: '';
+  width: 12px;
+  height: 7px;
+  margin-left: 10px;
+  display: inline-flex;
+  background-image: url("../assets/arrow-down.svg");
+  cursor: pointer;
+}
+.header-search {
+  height: 16px;
+  width: 16px;
+  content: ' ';
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("../assets/magnifier.svg");
+  background-color: unset;
+}
+.header-link {
+  align-items: center;
+  position: relative;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  /* color: var(--dark-background); */
+  color:  red; 
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+  font-weight: 500;
+}
 header {
   width: 100%;
   padding: 10px 15px 0 15px;

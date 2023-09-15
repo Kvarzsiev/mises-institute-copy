@@ -1,0 +1,85 @@
+.header > h1 {
+  width: 100%;
+  font-size: 32px;
+  line-height: 43px;
+  color: var(--dark-background);
+  font-family: 'Playfair Display';
+  font-weight: 900;
+}
+
+.most-visited > h2 {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: 'Playfair Display' ;
+  font-weight: 900;
+}
+
+#filter {
+  cursor: pointer;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0;
+  color: #085475;
+  font-family: 'Barlow Condensed';
+  font-weight: 500;
+}
+
+.most-visited {
+  background-color: var(--secondary-background);
+  padding: 22px 0 11px 42px;
+}
+
+.most-visited .card-most-visited p span {
+  position: absolute;
+  left: 0;
+  font-size: 24px;
+  color: var(--detail-red);
+  font-family: 'Playfair Display';
+  font-weight: 900;
+}
+
+.most-visited .card-most-visited p {
+  position: relative;
+  width: 85%;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 40px;
+  color: var(--dark-background);
+  font-family: 'Playfair Display';
+  font-weight: 400;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.most-visited .card-most-visited {
+  position: relative;
+  margin-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #D8D8D8;
+}
+
+.card-most-visited .arrow-right {
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  width: 16px;
+  height: 12px;
+  transform: translateY(calc(-50% - 5px));
+  background-image: url('../assets/arrow-right.svg');
+}
+
+.card-body h4 {
+  font-size: 16px;
+  line-height: 22px;
+  letter-spacing: 1px;
+  margin: 15px 0 10px;
+  font-family: 'Barlow Condensed';
+  font-weight: 500;
+  background-position: center;
+  background-repeat: no-repeat;
+}

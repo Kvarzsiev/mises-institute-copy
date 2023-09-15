@@ -1,0 +1,74 @@
+.about-us h2 {
+  font-size: 32px;
+  line-height: 43px;
+  color: var(--dark-background);
+  font-family: 'Playfair Display';
+  font-weight: 900;
+}
+
+.about-us p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #00202E;
+  font-family: 'Playfair Display';
+  font-weight: 400;
+}
+
+.auto-margin {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1200px !important;
+}
+
+.secondary-background h2 {
+  padding: 0;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 700;
+}
+.quem-somos-icon {
+  position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.quem-somos-icon p {
+  padding-left: 23px;
+}
+.quem-somos-icon p::before {
+  content: '';
+  top: 5px;
+  left: 0;
+  width: 23px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 23px;
+}
+.book::before {
+  background-image: url('../assets/book.svg');
+  height: 18px;
+}
+.restore::before {
+  background-image: url('../assets/restore.svg');
+}
+.group::before {
+  background-image: url('../assets/group.svg');
+}
+
+.support-buttons {
+  font-size: 16px;
+  line-height: 17px;
+  text-transform: uppercase;
+  font-family: 'Barlow Condensed';
+  font-weight: 700;
+  letter-spacing: 2.4px;
+  height: 40px;
+  border: none;
+  border-radius: 4px;
+  margin-right: 10px;
+}
